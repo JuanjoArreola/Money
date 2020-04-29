@@ -1,7 +1,7 @@
 import Foundation
 import Money
 
-public struct AED: Money, MoneyArithmetic {
+public struct AED: Currency {
     public static var code = "AED"
     public static var name = "UAE Dirham"
     public static var numericCode = "784"
@@ -15,7 +15,7 @@ public struct AED: Money, MoneyArithmetic {
     }
 }
 
-public struct AFN: Money, MoneyArithmetic {
+public struct AFN: Currency {
     public static var code = "AFN"
     public static var name = "Afghani"
     public static var numericCode = "971"
@@ -29,7 +29,7 @@ public struct AFN: Money, MoneyArithmetic {
     }
 }
 
-public struct ALL: Money, MoneyArithmetic {
+public struct ALL: Currency {
     public static var code = "ALL"
     public static var name = "Lek"
     public static var numericCode = "008"
@@ -43,7 +43,7 @@ public struct ALL: Money, MoneyArithmetic {
     }
 }
 
-public struct AMD: Money, MoneyArithmetic {
+public struct AMD: Currency {
     public static var code = "AMD"
     public static var name = "Armenian Dram"
     public static var numericCode = "051"
@@ -57,7 +57,7 @@ public struct AMD: Money, MoneyArithmetic {
     }
 }
 
-public struct ANG: Money, MoneyArithmetic {
+public struct ANG: Currency {
     public static var code = "ANG"
     public static var name = "Netherlands Antillean Guilder"
     public static var numericCode = "532"
@@ -71,7 +71,7 @@ public struct ANG: Money, MoneyArithmetic {
     }
 }
 
-public struct AOA: Money, MoneyArithmetic {
+public struct AOA: Currency {
     public static var code = "AOA"
     public static var name = "Kwanza"
     public static var numericCode = "973"
@@ -85,7 +85,7 @@ public struct AOA: Money, MoneyArithmetic {
     }
 }
 
-public struct ARS: Money, MoneyArithmetic {
+public struct ARS: Currency {
     public static var code = "ARS"
     public static var name = "Argentine Peso"
     public static var numericCode = "032"
@@ -99,7 +99,7 @@ public struct ARS: Money, MoneyArithmetic {
     }
 }
 
-public struct AUD: Money, MoneyArithmetic {
+public struct AUD: Currency {
     public static var code = "AUD"
     public static var name = "Australian Dollar"
     public static var numericCode = "036"
@@ -113,7 +113,7 @@ public struct AUD: Money, MoneyArithmetic {
     }
 }
 
-public struct AWG: Money, MoneyArithmetic {
+public struct AWG: Currency {
     public static var code = "AWG"
     public static var name = "Aruban Florin"
     public static var numericCode = "533"
@@ -127,7 +127,7 @@ public struct AWG: Money, MoneyArithmetic {
     }
 }
 
-public struct AZN: Money, MoneyArithmetic {
+public struct AZN: Currency {
     public static var code = "AZN"
     public static var name = "Azerbaijan Manat"
     public static var numericCode = "944"
@@ -141,7 +141,7 @@ public struct AZN: Money, MoneyArithmetic {
     }
 }
 
-public struct BAM: Money, MoneyArithmetic {
+public struct BAM: Currency {
     public static var code = "BAM"
     public static var name = "Convertible Mark"
     public static var numericCode = "977"
@@ -155,7 +155,7 @@ public struct BAM: Money, MoneyArithmetic {
     }
 }
 
-public struct BBD: Money, MoneyArithmetic {
+public struct BBD: Currency {
     public static var code = "BBD"
     public static var name = "Barbados Dollar"
     public static var numericCode = "052"
@@ -169,7 +169,7 @@ public struct BBD: Money, MoneyArithmetic {
     }
 }
 
-public struct BDT: Money, MoneyArithmetic {
+public struct BDT: Currency {
     public static var code = "BDT"
     public static var name = "Taka"
     public static var numericCode = "050"
@@ -183,7 +183,7 @@ public struct BDT: Money, MoneyArithmetic {
     }
 }
 
-public struct BGN: Money, MoneyArithmetic {
+public struct BGN: Currency {
     public static var code = "BGN"
     public static var name = "Bulgarian Lev"
     public static var numericCode = "975"
@@ -197,7 +197,7 @@ public struct BGN: Money, MoneyArithmetic {
     }
 }
 
-public struct BHD: Money, MoneyArithmetic {
+public struct BHD: Currency {
     public static var code = "BHD"
     public static var name = "Bahraini Dinar"
     public static var numericCode = "048"
@@ -211,7 +211,7 @@ public struct BHD: Money, MoneyArithmetic {
     }
 }
 
-public struct BIF: Money, MoneyArithmetic {
+public struct BIF: Currency {
     public static var code = "BIF"
     public static var name = "Burundi Franc"
     public static var numericCode = "108"
@@ -225,7 +225,7 @@ public struct BIF: Money, MoneyArithmetic {
     }
 }
 
-public struct BMD: Money, MoneyArithmetic {
+public struct BMD: Currency {
     public static var code = "BMD"
     public static var name = "Bermudian Dollar"
     public static var numericCode = "060"
@@ -239,7 +239,7 @@ public struct BMD: Money, MoneyArithmetic {
     }
 }
 
-public struct BND: Money, MoneyArithmetic {
+public struct BND: Currency {
     public static var code = "BND"
     public static var name = "Brunei Dollar"
     public static var numericCode = "096"
@@ -253,7 +253,7 @@ public struct BND: Money, MoneyArithmetic {
     }
 }
 
-public struct BOB: Money, MoneyArithmetic {
+public struct BOB: Currency {
     public static var code = "BOB"
     public static var name = "Boliviano"
     public static var numericCode = "068"
@@ -267,7 +267,7 @@ public struct BOB: Money, MoneyArithmetic {
     }
 }
 
-public struct BOV: Money, MoneyArithmetic {
+public struct BOV: Currency {
     public static var code = "BOV"
     public static var name = "Mvdol"
     public static var numericCode = "984"
@@ -281,7 +281,7 @@ public struct BOV: Money, MoneyArithmetic {
     }
 }
 
-public struct BRL: Money, MoneyArithmetic {
+public struct BRL: Currency {
     public static var code = "BRL"
     public static var name = "Brazilian Real"
     public static var numericCode = "986"
@@ -295,7 +295,7 @@ public struct BRL: Money, MoneyArithmetic {
     }
 }
 
-public struct BSD: Money, MoneyArithmetic {
+public struct BSD: Currency {
     public static var code = "BSD"
     public static var name = "Bahamian Dollar"
     public static var numericCode = "044"
@@ -309,7 +309,7 @@ public struct BSD: Money, MoneyArithmetic {
     }
 }
 
-public struct BTN: Money, MoneyArithmetic {
+public struct BTN: Currency {
     public static var code = "BTN"
     public static var name = "Ngultrum"
     public static var numericCode = "064"
@@ -323,7 +323,7 @@ public struct BTN: Money, MoneyArithmetic {
     }
 }
 
-public struct BWP: Money, MoneyArithmetic {
+public struct BWP: Currency {
     public static var code = "BWP"
     public static var name = "Pula"
     public static var numericCode = "072"
@@ -337,7 +337,7 @@ public struct BWP: Money, MoneyArithmetic {
     }
 }
 
-public struct BYN: Money, MoneyArithmetic {
+public struct BYN: Currency {
     public static var code = "BYN"
     public static var name = "Belarusian Ruble"
     public static var numericCode = "933"
@@ -351,7 +351,7 @@ public struct BYN: Money, MoneyArithmetic {
     }
 }
 
-public struct BZD: Money, MoneyArithmetic {
+public struct BZD: Currency {
     public static var code = "BZD"
     public static var name = "Belize Dollar"
     public static var numericCode = "084"
@@ -365,7 +365,7 @@ public struct BZD: Money, MoneyArithmetic {
     }
 }
 
-public struct CAD: Money, MoneyArithmetic {
+public struct CAD: Currency {
     public static var code = "CAD"
     public static var name = "Canadian Dollar"
     public static var numericCode = "124"
@@ -379,7 +379,7 @@ public struct CAD: Money, MoneyArithmetic {
     }
 }
 
-public struct CDF: Money, MoneyArithmetic {
+public struct CDF: Currency {
     public static var code = "CDF"
     public static var name = "Congolese Franc"
     public static var numericCode = "976"
@@ -393,7 +393,7 @@ public struct CDF: Money, MoneyArithmetic {
     }
 }
 
-public struct CHE: Money, MoneyArithmetic {
+public struct CHE: Currency {
     public static var code = "CHE"
     public static var name = "WIR Euro"
     public static var numericCode = "947"
@@ -407,7 +407,7 @@ public struct CHE: Money, MoneyArithmetic {
     }
 }
 
-public struct CHF: Money, MoneyArithmetic {
+public struct CHF: Currency {
     public static var code = "CHF"
     public static var name = "Swiss Franc"
     public static var numericCode = "756"
@@ -421,7 +421,7 @@ public struct CHF: Money, MoneyArithmetic {
     }
 }
 
-public struct CHW: Money, MoneyArithmetic {
+public struct CHW: Currency {
     public static var code = "CHW"
     public static var name = "WIR Franc"
     public static var numericCode = "948"
@@ -435,7 +435,7 @@ public struct CHW: Money, MoneyArithmetic {
     }
 }
 
-public struct CLF: Money, MoneyArithmetic {
+public struct CLF: Currency {
     public static var code = "CLF"
     public static var name = "Unidad de Fomento"
     public static var numericCode = "990"
@@ -449,7 +449,7 @@ public struct CLF: Money, MoneyArithmetic {
     }
 }
 
-public struct CLP: Money, MoneyArithmetic {
+public struct CLP: Currency {
     public static var code = "CLP"
     public static var name = "Chilean Peso"
     public static var numericCode = "152"
@@ -463,7 +463,7 @@ public struct CLP: Money, MoneyArithmetic {
     }
 }
 
-public struct CNY: Money, MoneyArithmetic {
+public struct CNY: Currency {
     public static var code = "CNY"
     public static var name = "Yuan Renminbi"
     public static var numericCode = "156"
@@ -477,7 +477,7 @@ public struct CNY: Money, MoneyArithmetic {
     }
 }
 
-public struct COP: Money, MoneyArithmetic {
+public struct COP: Currency {
     public static var code = "COP"
     public static var name = "Colombian Peso"
     public static var numericCode = "170"
@@ -491,7 +491,7 @@ public struct COP: Money, MoneyArithmetic {
     }
 }
 
-public struct COU: Money, MoneyArithmetic {
+public struct COU: Currency {
     public static var code = "COU"
     public static var name = "Unidad de Valor Real"
     public static var numericCode = "970"
@@ -505,7 +505,7 @@ public struct COU: Money, MoneyArithmetic {
     }
 }
 
-public struct CRC: Money, MoneyArithmetic {
+public struct CRC: Currency {
     public static var code = "CRC"
     public static var name = "Costa Rican Colon"
     public static var numericCode = "188"
@@ -519,7 +519,7 @@ public struct CRC: Money, MoneyArithmetic {
     }
 }
 
-public struct CUC: Money, MoneyArithmetic {
+public struct CUC: Currency {
     public static var code = "CUC"
     public static var name = "Peso Convertible"
     public static var numericCode = "931"
@@ -533,7 +533,7 @@ public struct CUC: Money, MoneyArithmetic {
     }
 }
 
-public struct CUP: Money, MoneyArithmetic {
+public struct CUP: Currency {
     public static var code = "CUP"
     public static var name = "Cuban Peso"
     public static var numericCode = "192"
@@ -547,7 +547,7 @@ public struct CUP: Money, MoneyArithmetic {
     }
 }
 
-public struct CVE: Money, MoneyArithmetic {
+public struct CVE: Currency {
     public static var code = "CVE"
     public static var name = "Cabo Verde Escudo"
     public static var numericCode = "132"
@@ -561,7 +561,7 @@ public struct CVE: Money, MoneyArithmetic {
     }
 }
 
-public struct CZK: Money, MoneyArithmetic {
+public struct CZK: Currency {
     public static var code = "CZK"
     public static var name = "Czech Koruna"
     public static var numericCode = "203"
@@ -575,7 +575,7 @@ public struct CZK: Money, MoneyArithmetic {
     }
 }
 
-public struct DJF: Money, MoneyArithmetic {
+public struct DJF: Currency {
     public static var code = "DJF"
     public static var name = "Djibouti Franc"
     public static var numericCode = "262"
@@ -589,7 +589,7 @@ public struct DJF: Money, MoneyArithmetic {
     }
 }
 
-public struct DKK: Money, MoneyArithmetic {
+public struct DKK: Currency {
     public static var code = "DKK"
     public static var name = "Danish Krone"
     public static var numericCode = "208"
@@ -603,7 +603,7 @@ public struct DKK: Money, MoneyArithmetic {
     }
 }
 
-public struct DOP: Money, MoneyArithmetic {
+public struct DOP: Currency {
     public static var code = "DOP"
     public static var name = "Dominican Peso"
     public static var numericCode = "214"
@@ -617,7 +617,7 @@ public struct DOP: Money, MoneyArithmetic {
     }
 }
 
-public struct DZD: Money, MoneyArithmetic {
+public struct DZD: Currency {
     public static var code = "DZD"
     public static var name = "Algerian Dinar"
     public static var numericCode = "012"
@@ -631,7 +631,7 @@ public struct DZD: Money, MoneyArithmetic {
     }
 }
 
-public struct EGP: Money, MoneyArithmetic {
+public struct EGP: Currency {
     public static var code = "EGP"
     public static var name = "Egyptian Pound"
     public static var numericCode = "818"
@@ -645,7 +645,7 @@ public struct EGP: Money, MoneyArithmetic {
     }
 }
 
-public struct ERN: Money, MoneyArithmetic {
+public struct ERN: Currency {
     public static var code = "ERN"
     public static var name = "Nakfa"
     public static var numericCode = "232"
@@ -659,7 +659,7 @@ public struct ERN: Money, MoneyArithmetic {
     }
 }
 
-public struct ETB: Money, MoneyArithmetic {
+public struct ETB: Currency {
     public static var code = "ETB"
     public static var name = "Ethiopian Birr"
     public static var numericCode = "230"
@@ -673,7 +673,7 @@ public struct ETB: Money, MoneyArithmetic {
     }
 }
 
-public struct EUR: Money, MoneyArithmetic {
+public struct EUR: Currency {
     public static var code = "EUR"
     public static var name = "Euro"
     public static var numericCode = "978"
@@ -687,7 +687,7 @@ public struct EUR: Money, MoneyArithmetic {
     }
 }
 
-public struct FJD: Money, MoneyArithmetic {
+public struct FJD: Currency {
     public static var code = "FJD"
     public static var name = "Fiji Dollar"
     public static var numericCode = "242"
@@ -701,7 +701,7 @@ public struct FJD: Money, MoneyArithmetic {
     }
 }
 
-public struct FKP: Money, MoneyArithmetic {
+public struct FKP: Currency {
     public static var code = "FKP"
     public static var name = "Falkland Islands Pound"
     public static var numericCode = "238"
@@ -715,7 +715,7 @@ public struct FKP: Money, MoneyArithmetic {
     }
 }
 
-public struct GBP: Money, MoneyArithmetic {
+public struct GBP: Currency {
     public static var code = "GBP"
     public static var name = "Pound Sterling"
     public static var numericCode = "826"
@@ -729,7 +729,7 @@ public struct GBP: Money, MoneyArithmetic {
     }
 }
 
-public struct GEL: Money, MoneyArithmetic {
+public struct GEL: Currency {
     public static var code = "GEL"
     public static var name = "Lari"
     public static var numericCode = "981"
@@ -743,7 +743,7 @@ public struct GEL: Money, MoneyArithmetic {
     }
 }
 
-public struct GHS: Money, MoneyArithmetic {
+public struct GHS: Currency {
     public static var code = "GHS"
     public static var name = "Ghana Cedi"
     public static var numericCode = "936"
@@ -757,7 +757,7 @@ public struct GHS: Money, MoneyArithmetic {
     }
 }
 
-public struct GIP: Money, MoneyArithmetic {
+public struct GIP: Currency {
     public static var code = "GIP"
     public static var name = "Gibraltar Pound"
     public static var numericCode = "292"
@@ -771,7 +771,7 @@ public struct GIP: Money, MoneyArithmetic {
     }
 }
 
-public struct GMD: Money, MoneyArithmetic {
+public struct GMD: Currency {
     public static var code = "GMD"
     public static var name = "Dalasi"
     public static var numericCode = "270"
@@ -785,7 +785,7 @@ public struct GMD: Money, MoneyArithmetic {
     }
 }
 
-public struct GNF: Money, MoneyArithmetic {
+public struct GNF: Currency {
     public static var code = "GNF"
     public static var name = "Guinean Franc"
     public static var numericCode = "324"
@@ -799,7 +799,7 @@ public struct GNF: Money, MoneyArithmetic {
     }
 }
 
-public struct GTQ: Money, MoneyArithmetic {
+public struct GTQ: Currency {
     public static var code = "GTQ"
     public static var name = "Quetzal"
     public static var numericCode = "320"
@@ -813,7 +813,7 @@ public struct GTQ: Money, MoneyArithmetic {
     }
 }
 
-public struct GYD: Money, MoneyArithmetic {
+public struct GYD: Currency {
     public static var code = "GYD"
     public static var name = "Guyana Dollar"
     public static var numericCode = "328"
@@ -827,7 +827,7 @@ public struct GYD: Money, MoneyArithmetic {
     }
 }
 
-public struct HKD: Money, MoneyArithmetic {
+public struct HKD: Currency {
     public static var code = "HKD"
     public static var name = "Hong Kong Dollar"
     public static var numericCode = "344"
@@ -841,7 +841,7 @@ public struct HKD: Money, MoneyArithmetic {
     }
 }
 
-public struct HNL: Money, MoneyArithmetic {
+public struct HNL: Currency {
     public static var code = "HNL"
     public static var name = "Lempira"
     public static var numericCode = "340"
@@ -855,7 +855,7 @@ public struct HNL: Money, MoneyArithmetic {
     }
 }
 
-public struct HRK: Money, MoneyArithmetic {
+public struct HRK: Currency {
     public static var code = "HRK"
     public static var name = "Kuna"
     public static var numericCode = "191"
@@ -869,7 +869,7 @@ public struct HRK: Money, MoneyArithmetic {
     }
 }
 
-public struct HTG: Money, MoneyArithmetic {
+public struct HTG: Currency {
     public static var code = "HTG"
     public static var name = "Gourde"
     public static var numericCode = "332"
@@ -883,7 +883,7 @@ public struct HTG: Money, MoneyArithmetic {
     }
 }
 
-public struct HUF: Money, MoneyArithmetic {
+public struct HUF: Currency {
     public static var code = "HUF"
     public static var name = "Forint"
     public static var numericCode = "348"
@@ -897,7 +897,7 @@ public struct HUF: Money, MoneyArithmetic {
     }
 }
 
-public struct IDR: Money, MoneyArithmetic {
+public struct IDR: Currency {
     public static var code = "IDR"
     public static var name = "Rupiah"
     public static var numericCode = "360"
@@ -911,7 +911,7 @@ public struct IDR: Money, MoneyArithmetic {
     }
 }
 
-public struct ILS: Money, MoneyArithmetic {
+public struct ILS: Currency {
     public static var code = "ILS"
     public static var name = "New Israeli Sheqel"
     public static var numericCode = "376"
@@ -925,7 +925,7 @@ public struct ILS: Money, MoneyArithmetic {
     }
 }
 
-public struct INR: Money, MoneyArithmetic {
+public struct INR: Currency {
     public static var code = "INR"
     public static var name = "Indian Rupee"
     public static var numericCode = "356"
@@ -939,7 +939,7 @@ public struct INR: Money, MoneyArithmetic {
     }
 }
 
-public struct IQD: Money, MoneyArithmetic {
+public struct IQD: Currency {
     public static var code = "IQD"
     public static var name = "Iraqi Dinar"
     public static var numericCode = "368"
@@ -953,7 +953,7 @@ public struct IQD: Money, MoneyArithmetic {
     }
 }
 
-public struct IRR: Money, MoneyArithmetic {
+public struct IRR: Currency {
     public static var code = "IRR"
     public static var name = "Iranian Rial"
     public static var numericCode = "364"
@@ -967,7 +967,7 @@ public struct IRR: Money, MoneyArithmetic {
     }
 }
 
-public struct ISK: Money, MoneyArithmetic {
+public struct ISK: Currency {
     public static var code = "ISK"
     public static var name = "Iceland Krona"
     public static var numericCode = "352"
@@ -981,7 +981,7 @@ public struct ISK: Money, MoneyArithmetic {
     }
 }
 
-public struct JMD: Money, MoneyArithmetic {
+public struct JMD: Currency {
     public static var code = "JMD"
     public static var name = "Jamaican Dollar"
     public static var numericCode = "388"
@@ -995,7 +995,7 @@ public struct JMD: Money, MoneyArithmetic {
     }
 }
 
-public struct JOD: Money, MoneyArithmetic {
+public struct JOD: Currency {
     public static var code = "JOD"
     public static var name = "Jordanian Dinar"
     public static var numericCode = "400"
@@ -1009,7 +1009,7 @@ public struct JOD: Money, MoneyArithmetic {
     }
 }
 
-public struct JPY: Money, MoneyArithmetic {
+public struct JPY: Currency {
     public static var code = "JPY"
     public static var name = "Yen"
     public static var numericCode = "392"
@@ -1023,7 +1023,7 @@ public struct JPY: Money, MoneyArithmetic {
     }
 }
 
-public struct KES: Money, MoneyArithmetic {
+public struct KES: Currency {
     public static var code = "KES"
     public static var name = "Kenyan Shilling"
     public static var numericCode = "404"
@@ -1037,7 +1037,7 @@ public struct KES: Money, MoneyArithmetic {
     }
 }
 
-public struct KGS: Money, MoneyArithmetic {
+public struct KGS: Currency {
     public static var code = "KGS"
     public static var name = "Som"
     public static var numericCode = "417"
@@ -1051,7 +1051,7 @@ public struct KGS: Money, MoneyArithmetic {
     }
 }
 
-public struct KHR: Money, MoneyArithmetic {
+public struct KHR: Currency {
     public static var code = "KHR"
     public static var name = "Riel"
     public static var numericCode = "116"
@@ -1065,7 +1065,7 @@ public struct KHR: Money, MoneyArithmetic {
     }
 }
 
-public struct KMF: Money, MoneyArithmetic {
+public struct KMF: Currency {
     public static var code = "KMF"
     public static var name = "Comorian Franc "
     public static var numericCode = "174"
@@ -1079,7 +1079,7 @@ public struct KMF: Money, MoneyArithmetic {
     }
 }
 
-public struct KPW: Money, MoneyArithmetic {
+public struct KPW: Currency {
     public static var code = "KPW"
     public static var name = "North Korean Won"
     public static var numericCode = "408"
@@ -1093,7 +1093,7 @@ public struct KPW: Money, MoneyArithmetic {
     }
 }
 
-public struct KRW: Money, MoneyArithmetic {
+public struct KRW: Currency {
     public static var code = "KRW"
     public static var name = "Won"
     public static var numericCode = "410"
@@ -1107,7 +1107,7 @@ public struct KRW: Money, MoneyArithmetic {
     }
 }
 
-public struct KWD: Money, MoneyArithmetic {
+public struct KWD: Currency {
     public static var code = "KWD"
     public static var name = "Kuwaiti Dinar"
     public static var numericCode = "414"
@@ -1121,7 +1121,7 @@ public struct KWD: Money, MoneyArithmetic {
     }
 }
 
-public struct KYD: Money, MoneyArithmetic {
+public struct KYD: Currency {
     public static var code = "KYD"
     public static var name = "Cayman Islands Dollar"
     public static var numericCode = "136"
@@ -1135,7 +1135,7 @@ public struct KYD: Money, MoneyArithmetic {
     }
 }
 
-public struct KZT: Money, MoneyArithmetic {
+public struct KZT: Currency {
     public static var code = "KZT"
     public static var name = "Tenge"
     public static var numericCode = "398"
@@ -1149,7 +1149,7 @@ public struct KZT: Money, MoneyArithmetic {
     }
 }
 
-public struct LAK: Money, MoneyArithmetic {
+public struct LAK: Currency {
     public static var code = "LAK"
     public static var name = "Lao Kip"
     public static var numericCode = "418"
@@ -1163,7 +1163,7 @@ public struct LAK: Money, MoneyArithmetic {
     }
 }
 
-public struct LBP: Money, MoneyArithmetic {
+public struct LBP: Currency {
     public static var code = "LBP"
     public static var name = "Lebanese Pound"
     public static var numericCode = "422"
@@ -1177,7 +1177,7 @@ public struct LBP: Money, MoneyArithmetic {
     }
 }
 
-public struct LKR: Money, MoneyArithmetic {
+public struct LKR: Currency {
     public static var code = "LKR"
     public static var name = "Sri Lanka Rupee"
     public static var numericCode = "144"
@@ -1191,7 +1191,7 @@ public struct LKR: Money, MoneyArithmetic {
     }
 }
 
-public struct LRD: Money, MoneyArithmetic {
+public struct LRD: Currency {
     public static var code = "LRD"
     public static var name = "Liberian Dollar"
     public static var numericCode = "430"
@@ -1205,7 +1205,7 @@ public struct LRD: Money, MoneyArithmetic {
     }
 }
 
-public struct LSL: Money, MoneyArithmetic {
+public struct LSL: Currency {
     public static var code = "LSL"
     public static var name = "Loti"
     public static var numericCode = "426"
@@ -1219,7 +1219,7 @@ public struct LSL: Money, MoneyArithmetic {
     }
 }
 
-public struct LYD: Money, MoneyArithmetic {
+public struct LYD: Currency {
     public static var code = "LYD"
     public static var name = "Libyan Dinar"
     public static var numericCode = "434"
@@ -1233,7 +1233,7 @@ public struct LYD: Money, MoneyArithmetic {
     }
 }
 
-public struct MAD: Money, MoneyArithmetic {
+public struct MAD: Currency {
     public static var code = "MAD"
     public static var name = "Moroccan Dirham"
     public static var numericCode = "504"
@@ -1247,7 +1247,7 @@ public struct MAD: Money, MoneyArithmetic {
     }
 }
 
-public struct MDL: Money, MoneyArithmetic {
+public struct MDL: Currency {
     public static var code = "MDL"
     public static var name = "Moldovan Leu"
     public static var numericCode = "498"
@@ -1261,7 +1261,7 @@ public struct MDL: Money, MoneyArithmetic {
     }
 }
 
-public struct MGA: Money, MoneyArithmetic {
+public struct MGA: Currency {
     public static var code = "MGA"
     public static var name = "Malagasy Ariary"
     public static var numericCode = "969"
@@ -1275,7 +1275,7 @@ public struct MGA: Money, MoneyArithmetic {
     }
 }
 
-public struct MKD: Money, MoneyArithmetic {
+public struct MKD: Currency {
     public static var code = "MKD"
     public static var name = "Denar"
     public static var numericCode = "807"
@@ -1289,7 +1289,7 @@ public struct MKD: Money, MoneyArithmetic {
     }
 }
 
-public struct MMK: Money, MoneyArithmetic {
+public struct MMK: Currency {
     public static var code = "MMK"
     public static var name = "Kyat"
     public static var numericCode = "104"
@@ -1303,7 +1303,7 @@ public struct MMK: Money, MoneyArithmetic {
     }
 }
 
-public struct MNT: Money, MoneyArithmetic {
+public struct MNT: Currency {
     public static var code = "MNT"
     public static var name = "Tugrik"
     public static var numericCode = "496"
@@ -1317,7 +1317,7 @@ public struct MNT: Money, MoneyArithmetic {
     }
 }
 
-public struct MOP: Money, MoneyArithmetic {
+public struct MOP: Currency {
     public static var code = "MOP"
     public static var name = "Pataca"
     public static var numericCode = "446"
@@ -1331,7 +1331,7 @@ public struct MOP: Money, MoneyArithmetic {
     }
 }
 
-public struct MRU: Money, MoneyArithmetic {
+public struct MRU: Currency {
     public static var code = "MRU"
     public static var name = "Ouguiya"
     public static var numericCode = "929"
@@ -1345,7 +1345,7 @@ public struct MRU: Money, MoneyArithmetic {
     }
 }
 
-public struct MUR: Money, MoneyArithmetic {
+public struct MUR: Currency {
     public static var code = "MUR"
     public static var name = "Mauritius Rupee"
     public static var numericCode = "480"
@@ -1359,7 +1359,7 @@ public struct MUR: Money, MoneyArithmetic {
     }
 }
 
-public struct MVR: Money, MoneyArithmetic {
+public struct MVR: Currency {
     public static var code = "MVR"
     public static var name = "Rufiyaa"
     public static var numericCode = "462"
@@ -1373,7 +1373,7 @@ public struct MVR: Money, MoneyArithmetic {
     }
 }
 
-public struct MWK: Money, MoneyArithmetic {
+public struct MWK: Currency {
     public static var code = "MWK"
     public static var name = "Malawi Kwacha"
     public static var numericCode = "454"
@@ -1387,7 +1387,7 @@ public struct MWK: Money, MoneyArithmetic {
     }
 }
 
-public struct MXN: Money, MoneyArithmetic {
+public struct MXN: Currency {
     public static var code = "MXN"
     public static var name = "Mexican Peso"
     public static var numericCode = "484"
@@ -1401,7 +1401,7 @@ public struct MXN: Money, MoneyArithmetic {
     }
 }
 
-public struct MXV: Money, MoneyArithmetic {
+public struct MXV: Currency {
     public static var code = "MXV"
     public static var name = "Mexican Unidad de Inversion (UDI)"
     public static var numericCode = "979"
@@ -1415,7 +1415,7 @@ public struct MXV: Money, MoneyArithmetic {
     }
 }
 
-public struct MYR: Money, MoneyArithmetic {
+public struct MYR: Currency {
     public static var code = "MYR"
     public static var name = "Malaysian Ringgit"
     public static var numericCode = "458"
@@ -1429,7 +1429,7 @@ public struct MYR: Money, MoneyArithmetic {
     }
 }
 
-public struct MZN: Money, MoneyArithmetic {
+public struct MZN: Currency {
     public static var code = "MZN"
     public static var name = "Mozambique Metical"
     public static var numericCode = "943"
@@ -1443,7 +1443,7 @@ public struct MZN: Money, MoneyArithmetic {
     }
 }
 
-public struct NAD: Money, MoneyArithmetic {
+public struct NAD: Currency {
     public static var code = "NAD"
     public static var name = "Namibia Dollar"
     public static var numericCode = "516"
@@ -1457,7 +1457,7 @@ public struct NAD: Money, MoneyArithmetic {
     }
 }
 
-public struct NGN: Money, MoneyArithmetic {
+public struct NGN: Currency {
     public static var code = "NGN"
     public static var name = "Naira"
     public static var numericCode = "566"
@@ -1471,7 +1471,7 @@ public struct NGN: Money, MoneyArithmetic {
     }
 }
 
-public struct NIO: Money, MoneyArithmetic {
+public struct NIO: Currency {
     public static var code = "NIO"
     public static var name = "Cordoba Oro"
     public static var numericCode = "558"
@@ -1485,7 +1485,7 @@ public struct NIO: Money, MoneyArithmetic {
     }
 }
 
-public struct NOK: Money, MoneyArithmetic {
+public struct NOK: Currency {
     public static var code = "NOK"
     public static var name = "Norwegian Krone"
     public static var numericCode = "578"
@@ -1499,7 +1499,7 @@ public struct NOK: Money, MoneyArithmetic {
     }
 }
 
-public struct NPR: Money, MoneyArithmetic {
+public struct NPR: Currency {
     public static var code = "NPR"
     public static var name = "Nepalese Rupee"
     public static var numericCode = "524"
@@ -1513,7 +1513,7 @@ public struct NPR: Money, MoneyArithmetic {
     }
 }
 
-public struct NZD: Money, MoneyArithmetic {
+public struct NZD: Currency {
     public static var code = "NZD"
     public static var name = "New Zealand Dollar"
     public static var numericCode = "554"
@@ -1527,7 +1527,7 @@ public struct NZD: Money, MoneyArithmetic {
     }
 }
 
-public struct OMR: Money, MoneyArithmetic {
+public struct OMR: Currency {
     public static var code = "OMR"
     public static var name = "Rial Omani"
     public static var numericCode = "512"
@@ -1541,7 +1541,7 @@ public struct OMR: Money, MoneyArithmetic {
     }
 }
 
-public struct PAB: Money, MoneyArithmetic {
+public struct PAB: Currency {
     public static var code = "PAB"
     public static var name = "Balboa"
     public static var numericCode = "590"
@@ -1555,7 +1555,7 @@ public struct PAB: Money, MoneyArithmetic {
     }
 }
 
-public struct PEN: Money, MoneyArithmetic {
+public struct PEN: Currency {
     public static var code = "PEN"
     public static var name = "Sol"
     public static var numericCode = "604"
@@ -1569,7 +1569,7 @@ public struct PEN: Money, MoneyArithmetic {
     }
 }
 
-public struct PGK: Money, MoneyArithmetic {
+public struct PGK: Currency {
     public static var code = "PGK"
     public static var name = "Kina"
     public static var numericCode = "598"
@@ -1583,7 +1583,7 @@ public struct PGK: Money, MoneyArithmetic {
     }
 }
 
-public struct PHP: Money, MoneyArithmetic {
+public struct PHP: Currency {
     public static var code = "PHP"
     public static var name = "Philippine Peso"
     public static var numericCode = "608"
@@ -1597,7 +1597,7 @@ public struct PHP: Money, MoneyArithmetic {
     }
 }
 
-public struct PKR: Money, MoneyArithmetic {
+public struct PKR: Currency {
     public static var code = "PKR"
     public static var name = "Pakistan Rupee"
     public static var numericCode = "586"
@@ -1611,7 +1611,7 @@ public struct PKR: Money, MoneyArithmetic {
     }
 }
 
-public struct PLN: Money, MoneyArithmetic {
+public struct PLN: Currency {
     public static var code = "PLN"
     public static var name = "Zloty"
     public static var numericCode = "985"
@@ -1625,7 +1625,7 @@ public struct PLN: Money, MoneyArithmetic {
     }
 }
 
-public struct PYG: Money, MoneyArithmetic {
+public struct PYG: Currency {
     public static var code = "PYG"
     public static var name = "Guarani"
     public static var numericCode = "600"
@@ -1639,7 +1639,7 @@ public struct PYG: Money, MoneyArithmetic {
     }
 }
 
-public struct QAR: Money, MoneyArithmetic {
+public struct QAR: Currency {
     public static var code = "QAR"
     public static var name = "Qatari Rial"
     public static var numericCode = "634"
@@ -1653,7 +1653,7 @@ public struct QAR: Money, MoneyArithmetic {
     }
 }
 
-public struct RON: Money, MoneyArithmetic {
+public struct RON: Currency {
     public static var code = "RON"
     public static var name = "Romanian Leu"
     public static var numericCode = "946"
@@ -1667,7 +1667,7 @@ public struct RON: Money, MoneyArithmetic {
     }
 }
 
-public struct RSD: Money, MoneyArithmetic {
+public struct RSD: Currency {
     public static var code = "RSD"
     public static var name = "Serbian Dinar"
     public static var numericCode = "941"
@@ -1681,7 +1681,7 @@ public struct RSD: Money, MoneyArithmetic {
     }
 }
 
-public struct RUB: Money, MoneyArithmetic {
+public struct RUB: Currency {
     public static var code = "RUB"
     public static var name = "Russian Ruble"
     public static var numericCode = "643"
@@ -1695,7 +1695,7 @@ public struct RUB: Money, MoneyArithmetic {
     }
 }
 
-public struct RWF: Money, MoneyArithmetic {
+public struct RWF: Currency {
     public static var code = "RWF"
     public static var name = "Rwanda Franc"
     public static var numericCode = "646"
@@ -1709,7 +1709,7 @@ public struct RWF: Money, MoneyArithmetic {
     }
 }
 
-public struct SAR: Money, MoneyArithmetic {
+public struct SAR: Currency {
     public static var code = "SAR"
     public static var name = "Saudi Riyal"
     public static var numericCode = "682"
@@ -1723,7 +1723,7 @@ public struct SAR: Money, MoneyArithmetic {
     }
 }
 
-public struct SBD: Money, MoneyArithmetic {
+public struct SBD: Currency {
     public static var code = "SBD"
     public static var name = "Solomon Islands Dollar"
     public static var numericCode = "090"
@@ -1737,7 +1737,7 @@ public struct SBD: Money, MoneyArithmetic {
     }
 }
 
-public struct SCR: Money, MoneyArithmetic {
+public struct SCR: Currency {
     public static var code = "SCR"
     public static var name = "Seychelles Rupee"
     public static var numericCode = "690"
@@ -1751,7 +1751,7 @@ public struct SCR: Money, MoneyArithmetic {
     }
 }
 
-public struct SDG: Money, MoneyArithmetic {
+public struct SDG: Currency {
     public static var code = "SDG"
     public static var name = "Sudanese Pound"
     public static var numericCode = "938"
@@ -1765,7 +1765,7 @@ public struct SDG: Money, MoneyArithmetic {
     }
 }
 
-public struct SEK: Money, MoneyArithmetic {
+public struct SEK: Currency {
     public static var code = "SEK"
     public static var name = "Swedish Krona"
     public static var numericCode = "752"
@@ -1779,7 +1779,7 @@ public struct SEK: Money, MoneyArithmetic {
     }
 }
 
-public struct SGD: Money, MoneyArithmetic {
+public struct SGD: Currency {
     public static var code = "SGD"
     public static var name = "Singapore Dollar"
     public static var numericCode = "702"
@@ -1793,7 +1793,7 @@ public struct SGD: Money, MoneyArithmetic {
     }
 }
 
-public struct SHP: Money, MoneyArithmetic {
+public struct SHP: Currency {
     public static var code = "SHP"
     public static var name = "Saint Helena Pound"
     public static var numericCode = "654"
@@ -1807,7 +1807,7 @@ public struct SHP: Money, MoneyArithmetic {
     }
 }
 
-public struct SLL: Money, MoneyArithmetic {
+public struct SLL: Currency {
     public static var code = "SLL"
     public static var name = "Leone"
     public static var numericCode = "694"
@@ -1821,7 +1821,7 @@ public struct SLL: Money, MoneyArithmetic {
     }
 }
 
-public struct SOS: Money, MoneyArithmetic {
+public struct SOS: Currency {
     public static var code = "SOS"
     public static var name = "Somali Shilling"
     public static var numericCode = "706"
@@ -1835,7 +1835,7 @@ public struct SOS: Money, MoneyArithmetic {
     }
 }
 
-public struct SRD: Money, MoneyArithmetic {
+public struct SRD: Currency {
     public static var code = "SRD"
     public static var name = "Surinam Dollar"
     public static var numericCode = "968"
@@ -1849,7 +1849,7 @@ public struct SRD: Money, MoneyArithmetic {
     }
 }
 
-public struct SSP: Money, MoneyArithmetic {
+public struct SSP: Currency {
     public static var code = "SSP"
     public static var name = "South Sudanese Pound"
     public static var numericCode = "728"
@@ -1863,7 +1863,7 @@ public struct SSP: Money, MoneyArithmetic {
     }
 }
 
-public struct STN: Money, MoneyArithmetic {
+public struct STN: Currency {
     public static var code = "STN"
     public static var name = "Dobra"
     public static var numericCode = "930"
@@ -1877,7 +1877,7 @@ public struct STN: Money, MoneyArithmetic {
     }
 }
 
-public struct SVC: Money, MoneyArithmetic {
+public struct SVC: Currency {
     public static var code = "SVC"
     public static var name = "El Salvador Colon"
     public static var numericCode = "222"
@@ -1891,7 +1891,7 @@ public struct SVC: Money, MoneyArithmetic {
     }
 }
 
-public struct SYP: Money, MoneyArithmetic {
+public struct SYP: Currency {
     public static var code = "SYP"
     public static var name = "Syrian Pound"
     public static var numericCode = "760"
@@ -1905,7 +1905,7 @@ public struct SYP: Money, MoneyArithmetic {
     }
 }
 
-public struct SZL: Money, MoneyArithmetic {
+public struct SZL: Currency {
     public static var code = "SZL"
     public static var name = "Lilangeni"
     public static var numericCode = "748"
@@ -1919,7 +1919,7 @@ public struct SZL: Money, MoneyArithmetic {
     }
 }
 
-public struct THB: Money, MoneyArithmetic {
+public struct THB: Currency {
     public static var code = "THB"
     public static var name = "Baht"
     public static var numericCode = "764"
@@ -1933,7 +1933,7 @@ public struct THB: Money, MoneyArithmetic {
     }
 }
 
-public struct TJS: Money, MoneyArithmetic {
+public struct TJS: Currency {
     public static var code = "TJS"
     public static var name = "Somoni"
     public static var numericCode = "972"
@@ -1947,7 +1947,7 @@ public struct TJS: Money, MoneyArithmetic {
     }
 }
 
-public struct TMT: Money, MoneyArithmetic {
+public struct TMT: Currency {
     public static var code = "TMT"
     public static var name = "Turkmenistan New Manat"
     public static var numericCode = "934"
@@ -1961,7 +1961,7 @@ public struct TMT: Money, MoneyArithmetic {
     }
 }
 
-public struct TND: Money, MoneyArithmetic {
+public struct TND: Currency {
     public static var code = "TND"
     public static var name = "Tunisian Dinar"
     public static var numericCode = "788"
@@ -1975,7 +1975,7 @@ public struct TND: Money, MoneyArithmetic {
     }
 }
 
-public struct TOP: Money, MoneyArithmetic {
+public struct TOP: Currency {
     public static var code = "TOP"
     public static var name = "Pa’anga"
     public static var numericCode = "776"
@@ -1989,7 +1989,7 @@ public struct TOP: Money, MoneyArithmetic {
     }
 }
 
-public struct TRY: Money, MoneyArithmetic {
+public struct TRY: Currency {
     public static var code = "TRY"
     public static var name = "Turkish Lira"
     public static var numericCode = "949"
@@ -2003,7 +2003,7 @@ public struct TRY: Money, MoneyArithmetic {
     }
 }
 
-public struct TTD: Money, MoneyArithmetic {
+public struct TTD: Currency {
     public static var code = "TTD"
     public static var name = "Trinidad and Tobago Dollar"
     public static var numericCode = "780"
@@ -2017,7 +2017,7 @@ public struct TTD: Money, MoneyArithmetic {
     }
 }
 
-public struct TWD: Money, MoneyArithmetic {
+public struct TWD: Currency {
     public static var code = "TWD"
     public static var name = "New Taiwan Dollar"
     public static var numericCode = "901"
@@ -2031,7 +2031,7 @@ public struct TWD: Money, MoneyArithmetic {
     }
 }
 
-public struct TZS: Money, MoneyArithmetic {
+public struct TZS: Currency {
     public static var code = "TZS"
     public static var name = "Tanzanian Shilling"
     public static var numericCode = "834"
@@ -2045,7 +2045,7 @@ public struct TZS: Money, MoneyArithmetic {
     }
 }
 
-public struct UAH: Money, MoneyArithmetic {
+public struct UAH: Currency {
     public static var code = "UAH"
     public static var name = "Hryvnia"
     public static var numericCode = "980"
@@ -2059,7 +2059,7 @@ public struct UAH: Money, MoneyArithmetic {
     }
 }
 
-public struct UGX: Money, MoneyArithmetic {
+public struct UGX: Currency {
     public static var code = "UGX"
     public static var name = "Uganda Shilling"
     public static var numericCode = "800"
@@ -2073,7 +2073,7 @@ public struct UGX: Money, MoneyArithmetic {
     }
 }
 
-public struct USD: Money, MoneyArithmetic {
+public struct USD: Currency {
     public static var code = "USD"
     public static var name = "US Dollar"
     public static var numericCode = "840"
@@ -2087,7 +2087,7 @@ public struct USD: Money, MoneyArithmetic {
     }
 }
 
-public struct USN: Money, MoneyArithmetic {
+public struct USN: Currency {
     public static var code = "USN"
     public static var name = "US Dollar (Next day)"
     public static var numericCode = "997"
@@ -2101,7 +2101,7 @@ public struct USN: Money, MoneyArithmetic {
     }
 }
 
-public struct UYI: Money, MoneyArithmetic {
+public struct UYI: Currency {
     public static var code = "UYI"
     public static var name = "Uruguay Peso en Unidades Indexadas (UI)"
     public static var numericCode = "940"
@@ -2115,7 +2115,7 @@ public struct UYI: Money, MoneyArithmetic {
     }
 }
 
-public struct UYU: Money, MoneyArithmetic {
+public struct UYU: Currency {
     public static var code = "UYU"
     public static var name = "Peso Uruguayo"
     public static var numericCode = "858"
@@ -2129,7 +2129,7 @@ public struct UYU: Money, MoneyArithmetic {
     }
 }
 
-public struct UYW: Money, MoneyArithmetic {
+public struct UYW: Currency {
     public static var code = "UYW"
     public static var name = "Unidad Previsional"
     public static var numericCode = "927"
@@ -2143,7 +2143,7 @@ public struct UYW: Money, MoneyArithmetic {
     }
 }
 
-public struct UZS: Money, MoneyArithmetic {
+public struct UZS: Currency {
     public static var code = "UZS"
     public static var name = "Uzbekistan Sum"
     public static var numericCode = "860"
@@ -2157,7 +2157,7 @@ public struct UZS: Money, MoneyArithmetic {
     }
 }
 
-public struct VES: Money, MoneyArithmetic {
+public struct VES: Currency {
     public static var code = "VES"
     public static var name = "Bolívar Soberano"
     public static var numericCode = "928"
@@ -2171,7 +2171,7 @@ public struct VES: Money, MoneyArithmetic {
     }
 }
 
-public struct VND: Money, MoneyArithmetic {
+public struct VND: Currency {
     public static var code = "VND"
     public static var name = "Dong"
     public static var numericCode = "704"
@@ -2185,7 +2185,7 @@ public struct VND: Money, MoneyArithmetic {
     }
 }
 
-public struct VUV: Money, MoneyArithmetic {
+public struct VUV: Currency {
     public static var code = "VUV"
     public static var name = "Vatu"
     public static var numericCode = "548"
@@ -2199,7 +2199,7 @@ public struct VUV: Money, MoneyArithmetic {
     }
 }
 
-public struct WST: Money, MoneyArithmetic {
+public struct WST: Currency {
     public static var code = "WST"
     public static var name = "Tala"
     public static var numericCode = "882"
@@ -2213,7 +2213,7 @@ public struct WST: Money, MoneyArithmetic {
     }
 }
 
-public struct XAF: Money, MoneyArithmetic {
+public struct XAF: Currency {
     public static var code = "XAF"
     public static var name = "CFA Franc BEAC"
     public static var numericCode = "950"
@@ -2227,7 +2227,7 @@ public struct XAF: Money, MoneyArithmetic {
     }
 }
 
-public struct XAG: Money, MoneyArithmetic {
+public struct XAG: Currency {
     public static var code = "XAG"
     public static var name = "Silver"
     public static var numericCode = "961"
@@ -2241,7 +2241,7 @@ public struct XAG: Money, MoneyArithmetic {
     }
 }
 
-public struct XAU: Money, MoneyArithmetic {
+public struct XAU: Currency {
     public static var code = "XAU"
     public static var name = "Gold"
     public static var numericCode = "959"
@@ -2255,7 +2255,7 @@ public struct XAU: Money, MoneyArithmetic {
     }
 }
 
-public struct XBA: Money, MoneyArithmetic {
+public struct XBA: Currency {
     public static var code = "XBA"
     public static var name = "Bond Markets Unit European Composite Unit (EURCO)"
     public static var numericCode = "955"
@@ -2269,7 +2269,7 @@ public struct XBA: Money, MoneyArithmetic {
     }
 }
 
-public struct XBB: Money, MoneyArithmetic {
+public struct XBB: Currency {
     public static var code = "XBB"
     public static var name = "Bond Markets Unit European Monetary Unit (E.M.U.-6)"
     public static var numericCode = "956"
@@ -2283,7 +2283,7 @@ public struct XBB: Money, MoneyArithmetic {
     }
 }
 
-public struct XBC: Money, MoneyArithmetic {
+public struct XBC: Currency {
     public static var code = "XBC"
     public static var name = "Bond Markets Unit European Unit of Account 9 (E.U.A.-9)"
     public static var numericCode = "957"
@@ -2297,7 +2297,7 @@ public struct XBC: Money, MoneyArithmetic {
     }
 }
 
-public struct XBD: Money, MoneyArithmetic {
+public struct XBD: Currency {
     public static var code = "XBD"
     public static var name = "Bond Markets Unit European Unit of Account 17 (E.U.A.-17)"
     public static var numericCode = "958"
@@ -2311,7 +2311,7 @@ public struct XBD: Money, MoneyArithmetic {
     }
 }
 
-public struct XCD: Money, MoneyArithmetic {
+public struct XCD: Currency {
     public static var code = "XCD"
     public static var name = "East Caribbean Dollar"
     public static var numericCode = "951"
@@ -2325,7 +2325,7 @@ public struct XCD: Money, MoneyArithmetic {
     }
 }
 
-public struct XDR: Money, MoneyArithmetic {
+public struct XDR: Currency {
     public static var code = "XDR"
     public static var name = "SDR (Special Drawing Right)"
     public static var numericCode = "960"
@@ -2339,7 +2339,7 @@ public struct XDR: Money, MoneyArithmetic {
     }
 }
 
-public struct XOF: Money, MoneyArithmetic {
+public struct XOF: Currency {
     public static var code = "XOF"
     public static var name = "CFA Franc BCEAO"
     public static var numericCode = "952"
@@ -2353,7 +2353,7 @@ public struct XOF: Money, MoneyArithmetic {
     }
 }
 
-public struct XPD: Money, MoneyArithmetic {
+public struct XPD: Currency {
     public static var code = "XPD"
     public static var name = "Palladium"
     public static var numericCode = "964"
@@ -2367,7 +2367,7 @@ public struct XPD: Money, MoneyArithmetic {
     }
 }
 
-public struct XPF: Money, MoneyArithmetic {
+public struct XPF: Currency {
     public static var code = "XPF"
     public static var name = "CFP Franc"
     public static var numericCode = "953"
@@ -2381,7 +2381,7 @@ public struct XPF: Money, MoneyArithmetic {
     }
 }
 
-public struct XPT: Money, MoneyArithmetic {
+public struct XPT: Currency {
     public static var code = "XPT"
     public static var name = "Platinum"
     public static var numericCode = "962"
@@ -2395,7 +2395,7 @@ public struct XPT: Money, MoneyArithmetic {
     }
 }
 
-public struct XSU: Money, MoneyArithmetic {
+public struct XSU: Currency {
     public static var code = "XSU"
     public static var name = "Sucre"
     public static var numericCode = "994"
@@ -2409,7 +2409,7 @@ public struct XSU: Money, MoneyArithmetic {
     }
 }
 
-public struct XTS: Money, MoneyArithmetic {
+public struct XTS: Currency {
     public static var code = "XTS"
     public static var name = "Codes specifically reserved for testing purposes"
     public static var numericCode = "963"
@@ -2423,7 +2423,7 @@ public struct XTS: Money, MoneyArithmetic {
     }
 }
 
-public struct XUA: Money, MoneyArithmetic {
+public struct XUA: Currency {
     public static var code = "XUA"
     public static var name = "ADB Unit of Account"
     public static var numericCode = "965"
@@ -2437,7 +2437,7 @@ public struct XUA: Money, MoneyArithmetic {
     }
 }
 
-public struct XXX: Money, MoneyArithmetic {
+public struct XXX: Currency {
     public static var code = "XXX"
     public static var name = "The codes assigned for transactions where no currency is involved"
     public static var numericCode = "999"
@@ -2451,7 +2451,7 @@ public struct XXX: Money, MoneyArithmetic {
     }
 }
 
-public struct YER: Money, MoneyArithmetic {
+public struct YER: Currency {
     public static var code = "YER"
     public static var name = "Yemeni Rial"
     public static var numericCode = "886"
@@ -2465,7 +2465,7 @@ public struct YER: Money, MoneyArithmetic {
     }
 }
 
-public struct ZAR: Money, MoneyArithmetic {
+public struct ZAR: Currency {
     public static var code = "ZAR"
     public static var name = "Rand"
     public static var numericCode = "710"
@@ -2479,7 +2479,7 @@ public struct ZAR: Money, MoneyArithmetic {
     }
 }
 
-public struct ZMW: Money, MoneyArithmetic {
+public struct ZMW: Currency {
     public static var code = "ZMW"
     public static var name = "Zambian Kwacha"
     public static var numericCode = "967"
@@ -2493,7 +2493,7 @@ public struct ZMW: Money, MoneyArithmetic {
     }
 }
 
-public struct ZWL: Money, MoneyArithmetic {
+public struct ZWL: Currency {
     public static var code = "ZWL"
     public static var name = "Zimbabwe Dollar"
     public static var numericCode = "932"

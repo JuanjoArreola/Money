@@ -2,74 +2,57 @@
 
 A Library to represent Money for Swift 5.
 
-#### Features:
+### Features:
 - Strongly Typed
 - Lightweight
 
-#### Considerations:
-- Might not be the best option if the currencies are unknown at runtime
+### Considerations:
 - Some values lose precision when initialized from a float literal
 
-#### Installation
+### Installation
 - Swift Package Manager
 
-### Usage
+## Usage
 
-If you need all the currencies from the ISO 4217 you can import the Currency Library which 
+You can create your own *Currency* by writing a struct or final class that conforms to the `Currency` protocol:
+
+```swift
+struct USD: Currency {
+    static var code: String = "USD"
+    static var minorUnits: Int? = 2
+    var value: Decimal
+    
+    init(_ value: Decimal) {
+        self.value = value
+    }
+}
+```
+
+You can also copy the currencies you need from the Currencies target.
+Creating your own currencies is a good idea if you only need some of them, however, 
+if you need all the currencies from the ISO 4217 you can import the **Currencies** Library which 
 contains a `struct` for every currency in the specification:
 
 ````wift
-import Currency
+import Currencies
 
 let price: USD = 200
 let cost: MXN = "200"
 let amount = EUR(200)
 ````
 
-If the number of currencies your project needs is small you can import the Money Library and
-create only the currencies you need or copy them from the Currency Library
-
-To declare a currency you have to create a Type that conforms to `Money` and `MoneyArithmetic`:
-
-```swift
-import Money
-
-struct USD: Money, MoneyArithmetic {
-    static var code: String = "USD"
-    var value: Decimal
-    
-    init(_ value: Decimal) {
-        self.value = value
-    }
-}
-```
-
-Of course you can add your own custom currencies with all properties you need like its 
-name or entities:
-
-```swift
-class Star: Money, MoneyArithmetic {
-    static var code = "STR"
-    static var name = "Stars"
-    static var entities: ["MyApp"]
-    var value: Decimal
-    
-    init(_ value: Decimal) {
-        self.value = value
-    }
-}
-```
-
-#### Comparing 
+### Comparing 
 
 You can only compare money of the same currency
 
 ````wift
 USD(60) > USD(20) // true
-// USD(60) > CHF(20) // error
+TND(10) <= TND(20) // true
+
+USD(10) == JPY(10) // Compilation error: Cannot convert value of type 'JPY' to expected argument type 'USD'
 ````
 
-#### Arithmetic
+### Arithmetic
 
 Money types can be added, subtracted, multiplied and divided:
  

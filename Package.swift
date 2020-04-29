@@ -7,7 +7,7 @@ let package = Package(
     name: "Money",
     products: [
         .library(name: "Money", targets: ["Money"]),
-        .library(name: "Currency", targets: ["Currency"]),
+        .library(name: "Currencies", targets: ["Currencies"]),
     ],
     dependencies: [
     ],
@@ -16,7 +16,7 @@ let package = Package(
             name: "Money",
             dependencies: []),
         .target(
-            name: "Currency",
+            name: "Currencies",
             dependencies: ["Money"]),
         .testTarget(
             name: "MoneyTests",

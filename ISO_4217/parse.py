@@ -2,7 +2,7 @@ from xml.dom.minidom import parse
 import json
 
 struct_format = '''
-public struct {0}: Money, MoneyArithmetic {{
+public struct {0}: Currency {{
     public static var code = "{0}"
     public static var name = "{1}"
     public static var numericCode = "{2}"

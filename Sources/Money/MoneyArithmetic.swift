@@ -7,67 +7,9 @@
 
 import Foundation
 
-public protocol MoneyArithmetic: ExpressibleByStringLiteral, LosslessStringConvertible, ExpressibleByFloatLiteral, Comparable, Hashable, SignedNumeric, Codable {}
+public typealias MoneyArithmetic = Comparable & Hashable & SignedNumeric
 
-// MARK: -
-
-public extension Money where Self: ExpressibleByIntegerLiteral {
-    init(integerLiteral value: Int) {
-        self.init(Decimal(integerLiteral: value))
-    }
-}
-
-public extension Money where Self: LosslessStringConvertible {
-    init?(_ description: String) {
-        if let decimal = Decimal(string: description) {
-            self.init(decimal)
-        } else {
-            return nil
-        }
-    }
-
-    var description: String {
-        return value.description
-    }
-}
-
-public extension Money where Self: ExpressibleByStringLiteral {
-    init(stringLiteral value: String) {
-        self.init(Decimal(string: value)!)
-    }
-}
-
-public extension Money where Self: ExpressibleByFloatLiteral {
-    init(floatLiteral value: Double) {
-        self.init(Decimal(floatLiteral: value))
-    }
-}
-
-public extension Money {
-    init?(minorUnits value: Int) {
-        guard let units = Self.minorUnits else {
-            return nil
-        }
-        if units == 0 {
-            self.init(Decimal(value))
-        } else {
-            self.init(Decimal(value) / pow(Decimal(10), units))
-        }
-    }
-}
-
-public extension Money {
-    func rounded(units: Int? = nil, mode: NSDecimalNumber.RoundingMode = .bankers) -> Self? {
-        guard let scale = units ?? Self.minorUnits else { return nil }
-        var result = Decimal()
-        var value = self.value
-        NSDecimalRound(&result, &value, scale, mode)
-        
-        return Self(result)
-    }
-}
-
-// MARK: -
+// MARK: - Comparable
 
 public extension Money where Self: Comparable {
     static func < (lhs: Self, rhs: Self) -> Bool {
@@ -84,12 +26,6 @@ public extension Money where Self: Equatable {
 public extension Money where Self: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(value)
-    }
-}
-
-public extension Money {
-    var isNaN: Bool {
-        return value.isNaN
     }
 }
 
@@ -149,13 +85,5 @@ public extension Money where Self: SignedNumeric {
     
     static func /= (lhs: inout Self, rhs: Self) {
         lhs.value /= rhs.value
-    }
-}
-
-// MARK: - Util
-
-public extension Sequence where Element: AdditiveArithmetic {
-    func sum() -> Element {
-        return reduce(.zero, +)
     }
 }

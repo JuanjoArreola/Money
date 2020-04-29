@@ -1,8 +1,8 @@
 //
-//  Money+Codable.swift
+//  Currency+Codable.swift
 //  Currency
 //
-//  Created by JuanJo on 28/04/20.
+//  Created by JuanJo on 29/04/20.
 //
 
 import Foundation
@@ -12,7 +12,7 @@ enum CodingKeys: String, CodingKey {
     case currencyCode
 }
 
-public extension Money where Self: Codable {
+public extension Currency where Self: Codable {
     
     init(from decoder: Decoder) throws {
         var string: String?
@@ -29,7 +29,7 @@ public extension Money where Self: Codable {
         if let value = string, let decimal = Decimal(string: value) {
             self.init(decimal)
         } else {
-            let context = DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Could not decode Money")
+            let context = DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Could not decode Currency")
             throw DecodingError.dataCorrupted(context)
         }
     }

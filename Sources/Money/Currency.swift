@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol Currency {
+public protocol Currency: Money, MoneyExpressible, MoneyArithmetic, Codable {
     static var code: String { get }
     static var minorUnits: Int? { get }
 }

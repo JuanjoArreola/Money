@@ -1,7 +1,7 @@
 import XCTest
 import Money
 
-struct USD: Money, MoneyArithmetic {
+struct USD: Currency {
     static var code: String = "USD"
     static var minorUnits: Int? = 2
     var value: Decimal
@@ -11,7 +11,7 @@ struct USD: Money, MoneyArithmetic {
     }
 }
 
-public struct JPY: Money, MoneyArithmetic {
+public struct JPY: Currency {
     public static var code = "JPY"
     public static var minorUnits: Int? = 0
     public var value: Decimal
@@ -21,7 +21,7 @@ public struct JPY: Money, MoneyArithmetic {
     }
 }
 
-public struct GNF: Money, MoneyArithmetic {
+public struct GNF: Currency {
     public static var code = "GNF"
     public static var name = "Guinean Franc"
     public static var minorUnits: Int? = nil
@@ -32,7 +32,7 @@ public struct GNF: Money, MoneyArithmetic {
     }
 }
 
-public struct TND: Money, MoneyArithmetic {
+public struct TND: Currency {
     public static var code = "TND"
     public static var name = "Tunisian Dinar"
     public static var minorUnits: Int? = 3
