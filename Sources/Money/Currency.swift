@@ -9,4 +9,5 @@ import Foundation
 
 public protocol Currency {
     static var code: String { get }
+    static var minorUnits: Int? { get }
 }

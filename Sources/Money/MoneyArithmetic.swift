@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol MoneyArithmetic: ExpressibleByStringLiteral, LosslessStringConvertible, ExpressibleByFloatLiteral, Comparable, Hashable, SignedNumeric {}
+public protocol MoneyArithmetic: ExpressibleByStringLiteral, LosslessStringConvertible, ExpressibleByFloatLiteral, Comparable, Hashable, SignedNumeric, Codable {}
 
 // MARK: -
 
@@ -21,8 +21,9 @@ public extension Money where Self: LosslessStringConvertible {
     init?(_ description: String) {
         if let decimal = Decimal(string: description) {
             self.init(decimal)
+        } else {
+            return nil
         }
-        return nil
     }
 
     var description: String {
@@ -42,11 +43,35 @@ public extension Money where Self: ExpressibleByFloatLiteral {
     }
 }
 
+public extension Money {
+    init?(minorUnits value: Int) {
+        guard let units = Self.minorUnits else {
+            return nil
+        }
+        if units == 0 {
+            self.init(Decimal(value))
+        } else {
+            self.init(Decimal(value) / pow(Decimal(10), units))
+        }
+    }
+}
+
+public extension Money {
+    func rounded(units: Int? = nil, mode: NSDecimalNumber.RoundingMode = .bankers) -> Self? {
+        guard let scale = units ?? Self.minorUnits else { return nil }
+        var result = Decimal()
+        var value = self.value
+        NSDecimalRound(&result, &value, scale, mode)
+        
+        return Self(result)
+    }
+}
+
 // MARK: -
 
 public extension Money where Self: Comparable {
     static func < (lhs: Self, rhs: Self) -> Bool {
-        return lhs < rhs
+        return lhs.value < rhs.value
     }
 }
 
@@ -65,10 +90,6 @@ public extension Money where Self: Hashable {
 public extension Money {
     var isNaN: Bool {
         return value.isNaN
-    }
-    
-    var isInfinite: Bool {
-        return value.isInfinite
     }
 }
 
@@ -103,10 +124,11 @@ public extension Money where Self: SignedNumeric {
     }
     
     init?<T>(exactly source: T) where T : BinaryInteger {
-        if let decimal = Decimal(exactly: source) {
-            self.init(decimal)
+        if let value = Int(exactly: source) {
+            self.init(Decimal(value))
+        } else {
+            return nil
         }
-        return nil
     }
     
     static func * (lhs: Self, rhs: Self) -> Self {

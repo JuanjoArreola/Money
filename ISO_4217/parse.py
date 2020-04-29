@@ -4,10 +4,10 @@ import json
 struct_format = '''
 public struct {0}: Money, MoneyArithmetic {{
     public static var code = "{0}"
-    static var name = "{1}"
-    static var numericCode = "{2}"
-    static var minorUnits: Int? = {3}
-    static var entities: [String] = [{4}]
+    public static var name = "{1}"
+    public static var numericCode = "{2}"
+    public static var minorUnits: Int? = {3}
+    public static var entities: [String] = [{4}]
     
     public var value: Decimal
     
