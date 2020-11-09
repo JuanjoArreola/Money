@@ -47,7 +47,7 @@ class CodableTests: XCTestCase {
     func testEncode() throws {
         let product = Product(price: USD(200))
         let result = try JSONEncoder().encode(product)
-        XCTAssertEqual(String(data: result, encoding: .utf8), "{\"price\":{\"amount\":200,\"currencyCode\":\"USD\"}}")
+        XCTAssertEqual(String(data: result, encoding: .utf8), "{\"price\":{\"amount\":\"200\",\"currencyCode\":\"USD\"}}")
     }
     
     static var allTests = [
